@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="44px" viewBox="0 0 310 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="x-Navigation-und-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Animation-Umlagerung" transform="translate(-192.000000, -255.000000)">
+            <g id="Group-5" transform="translate(192.000000, 252.000000)">
+                <g id="Group" transform="translate(0.000000, 3.000000)" fill="#383D47">
+                    <path d="M3.58333333,9.55555556 L3.58333333,3.58333333 L9.55555556,3.58333333 L9.55555556,0 L33.4444444,4.38831769e-15 L33.4444444,3.58333333 L39.4166667,3.58333333 L39.4166667,9.55555556 L43,9.55555556 L43,33.4444444 L39.4166667,33.4444444 L39.4166667,39.4166667 L33.4444444,39.4166667 L33.4444444,43 L9.55555556,43 L9.55555556,39.4166667 L3.58333333,39.4166667 L3.58333333,33.4444444 L0,33.4444444 L0,9.55555556 L3.58333333,9.55555556 Z M0,0 L43,0 L43,43 L0,43 L0,0 Z" id="Shape"></path>
+                    <polygon id="Rectangle-path" points="7.16666667 11.9444444 11.9444444 11.9444444 11.9444444 31.0555556 7.16666667 31.0555556"></polygon>
+                    <rect id="Rectangle-path" x="19.1111111" y="11.9444444" width="4.77777778" height="19.1111111"></rect>
+                    <rect id="Rectangle-path" x="33.4444444" y="11.9444444" width="2.38888889" height="19.1111111"></rect>
+                    <rect id="Rectangle-path" x="14.3333333" y="11.9444444" width="2.38888889" height="19.1111111"></rect>
+                    <rect id="Rectangle-path" x="26.2777778" y="11.9444444" width="4.77777778" height="19.1111111"></rect>
+                </g>
+                <text id="Bitte-scannen-sie-da" font-family="Roboto-Regular, Roboto" font-size="18" font-weight="normal" line-spacing="24" fill="#2D333D">
+                    <tspan x="66" y="19">Bitte scannen sie das Material </tspan>
+                    <tspan x="66" y="43">oder den Lagerort.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

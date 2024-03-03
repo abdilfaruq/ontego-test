@@ -1,118 +1,178 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Head from "next/head";
+import ContentContainer from "@/components/complex/ContentContainer";
 
 export default function Home() {
+  
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+        <div id="section-gerate" className="cs-section cs-hfinder cs-hidden-sm-down" style={{paddingTop:"160px",marginTop:"-100px"}}>
+          <div className="container clearfix">
+            <div className="row">
+              <div className="col-md-12 center" style={{marginBottom:"30px"}}>
+                <div id="cs-hfinder-expandable">
+                  <div className="cs-hfinder-filter-row">
+                    <span style={{"color":"#2D333D",fontFamily:"Capitolium2",fontSize:"16px",fontWeight:"bold",lineHeight:"28px",marginRight:"16px"}}>Auswahl</span>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-a-alle" id="cs-a-alle" defaultChecked />
+                      <span className="cs-chip-checkmark">Alle Geräte</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-a-favoriten" id="cs-a-favoriten" />
+                      <span className="cs-chip-checkmark">Unsere Favoriten</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-a-mietgeräte" id="cs-a-mietgeräte" />
+                      <span className="cs-chip-checkmark">Mietgeräte</span></label></div>
+                  </div>
+                  <div className="cs-hfinder-filter-row">
+                    <span style={{"color":"#2D333D",fontFamily:"Capitolium2",fontSize:"16px",fontWeight:"bold",lineHeight:"28px",marginRight:"16px"}}>Gerätetyp</span>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-g-handheld" />
+                      <span className="cs-chip-checkmark">Handheld-Computer</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-g-smartphone" />
+                      <span className="cs-chip-checkmark">Smartphone</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-g-tablet" />
+                      <span className="cs-chip-checkmark">Staplerterminal/Tablet</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-g-wearable" />
+                      <span className="cs-chip-checkmark">Wearable/Handscanner</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-g-drucker" />
+                      <span className="cs-chip-checkmark">Drucker</span></label></div>
+                  </div>
+                  <div className="cs-hfinder-filter-row cs-hfinder-filter-row-toogle cs-hfinder-filter-row-toogle-inactive cs-hfinder-filter-row-toogle-fade">
+                    <span style={{"color":"#2D333D",fontFamily:"Capitolium2",fontSize:"16px",fontWeight:"bold",lineHeight:"28px",marginRight:"16px"}}>Hersteller</span>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-ACD" />
+                      <span className="cs-chip-checkmark">ACD</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Advantech" />
+                      <span className="cs-chip-checkmark">Advantech</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Bixolon" />
+                      <span className="cs-chip-checkmark">Bixolon</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Casio" />
+                      <span className="cs-chip-checkmark">Casio</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-CAT" />
+                      <span className="cs-chip-checkmark">CAT</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Cipherlab" />
+                      <span className="cs-chip-checkmark">Cipherlab</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Datalogic" />
+                      <span className="cs-chip-checkmark">Datalogic</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Feig" />
+                      <span className="cs-chip-checkmark">Feig</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Getac" />
+                      <span className="cs-chip-checkmark">Getac</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Gigaset" />
+                      <span className="cs-chip-checkmark">Gigaset</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Honeywell" />
+                      <span className="cs-chip-checkmark">Honeywell</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-i-Safe-Mobile" />
+                      <span className="cs-chip-checkmark">i.Safe Mobile</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-iData" />
+                      <span className="cs-chip-checkmark">iData</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Keyence" />
+                      <span className="cs-chip-checkmark">Keyence</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-KoamTac" />
+                      <span className="cs-chip-checkmark">KoamTac</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Newland" />
+                      <span className="cs-chip-checkmark">Newland</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Panasonic" />
+                      <span className="cs-chip-checkmark">Panasonic</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Point-Mobile" />
+                      <span className="cs-chip-checkmark">Point Mobile</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-ProGlove" />
+                      <span className="cs-chip-checkmark">ProGlove</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Samsung" />
+                      <span className="cs-chip-checkmark">Samsung</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-h-Zebra" />
+                      <span className="cs-chip-checkmark">Zebra</span></label></div>
+                  </div>
+                  <div className="cs-hfinder-filter-row cs-hfinder-filter-row-toogle cs-hfinder-filter-row-toogle-inactive cs-hfinder-filter-row-toogle-fade" style={{marginBottom:"24px"}}>
+                    <span style={{"color":"#2D333D",fontFamily:"Capitolium2",fontSize:"16px",fontWeight:"bold",lineHeight:"28px",marginRight:"16px"}}>Einsatzgebiet</span>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-e-lagerlogistik" />
+                      <span className="cs-chip-checkmark">Lager &amp; Produktion</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-e-getränkelogistik" />
+                      <span className="cs-chip-checkmark">Getränkelogistik</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-e-instandhaltung" />
+                      <span className="cs-chip-checkmark">Instandhaltung</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-e-service" />
+                      <span className="cs-chip-checkmark">Field Service</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-e-healthcare" />
+                      <span className="cs-chip-checkmark">Healthcare</span></label></div>
+                    <div className="cs-form-field-group" style={{marginRight:"16px"}}><label className="cs-chip-container">
+                      <input type="checkbox" cs-data-filter=".cs-e-geschuetzt" />
+                      <span className="cs-chip-checkmark">Ex-geschützt</span></label></div>
+                  </div>
+                  <div className="row justify-content-center cs-hfinder-filter-row-toogle cs-hfinder-filter-row-toogle-inactive cs-hfinder-filter-row-toogle-fade">
+                    <div className="col-lg-4 col-md-6" style={{marginBottom:"40px"}}>
+                      <div style={{"padding":"0 67px"}}>
+                        <div style={{"color":"#2D333D",fontFamily:"Capitolium2",fontSize:"16px",fontWeight:"bold",lineHeight:"28px",marginBottom:"-13px"}}>
+                          Listenpreis
+                        </div>
+                        <span className="cs-range-label-unit-from">€</span>
+                        <span className="cs-range-label-unit-to">€</span>
+                        <input className="range_01" />
+                      </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6" style={{marginBottom:"40px"}}>
+                      <div style={{"padding":"0 67px"}}>
+                        <div style={{"color":"#2D333D",fontFamily:"Capitolium2",fontSize:"16px",fontWeight:"bold",lineHeight:"28px",marginBottom:"-13px"}}>
+                          Gewicht
+                        </div>
+                        <span className="cs-range-label-unit-from">g</span><span className="cs-range-label-unit-to">g</span>
+                        <input className="range_02" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row cs-hfinder-filter-row">
+                    <div className="offset-md-1 col-md-5" style={{marginBottom:"21px"}}>
+                      <div style={{"display":"table","height":"100%","width":"100%"}}>
+                        <div style={{"display":"table-cell",verticalAlign:"bottom",WebkitTextAlign:"left",textAlign:"left","color":"#96999E",fontFamily:"Roboto",fontSize:"12px",letterSpacing:"0.2px",lineHeight:"18px"}}>
+                          Alle Angaben / Preise ohne Gewähr
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-5" style={{marginBottom:"21px"}}>
+                      <div style={{"display":"table","height":"100%","width":"100%"}}>
+                        <div style={{"display":"table-cell",verticalAlign:"bottom",WebkitTextAlign:"right",textAlign:"right","color":"#0077B6",fontFamily:"Roboto",fontSize:"16px",fontWeight:"500",letterSpacing:"0.18px",lineHeight:"26px","cursor":"pointer"}} id="cs-reset-button">
+                          Filter zurücksetzen
+                        </div>
+                        <div style={{"display":"table-cell",verticalAlign:"bottom",WebkitTextAlign:"right",textAlign:"right","color":"#0077B6",fontFamily:"Roboto",fontSize:"16px",fontWeight:"500",letterSpacing:"0.18px",lineHeight:"26px","cursor":"pointer"}} id="cs-expand-button">
+                            Mehr Filter anzeigen
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ContentContainer />
+          </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }

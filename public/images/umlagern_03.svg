@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="319px" height="224px" viewBox="0 0 319 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="87" y="0" width="232" height="48"></rect>
+        <filter x="-0.4%" y="-2.1%" width="100.9%" height="108.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.671   0 0 0 0 0.678   0 0 0 0 0.694  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-3" x="87" y="58" width="232" height="48"></rect>
+        <filter x="-0.4%" y="-2.1%" width="100.9%" height="108.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.671   0 0 0 0 0.678   0 0 0 0 0.694  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="87" y="116" width="232" height="48"></rect>
+        <filter x="-0.4%" y="-2.1%" width="100.9%" height="108.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.671   0 0 0 0 0.678   0 0 0 0 0.694  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="87" y="173.791667" width="232" height="48"></rect>
+        <filter x="-0.4%" y="-2.1%" width="100.9%" height="108.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.671   0 0 0 0 0.678   0 0 0 0 0.694  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="x-Navigation-und-Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Animation-Umlagerung" transform="translate(-189.000000, -393.000000)">
+            <g id="Group-6" transform="translate(189.000000, 393.000000)">
+                <text id="Material*" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="20" fill="#2D333D">
+                    <tspan x="0" y="88">Material*</tspan>
+                </text>
+                <text id="Von*" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="20" fill="#2D333D">
+                    <tspan x="0" y="31">Von*</tspan>
+                </text>
+                <g id="search-bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="WA02" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="22" fill="#2D333D">
+                    <tspan x="97" y="31">WA02</tspan>
+                </text>
+                <g id="search-bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+                <text id="Schrauben" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="22" fill="#2D333D">
+                    <tspan x="97" y="89">Schrauben</tspan>
+                </text>
+                <g id="search-bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <text id="030-300" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="22" fill="#2D333D">
+                    <tspan x="97" y="147">030-300</tspan>
+                </text>
+                <g id="search-bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                </g>
+                <text id="10000" font-family="Roboto-Regular, Roboto" font-size="16" font-weight="normal" line-spacing="22" fill="#2D333D">
+                    <tspan x="97" y="204.791667">10000</tspan>
+                </text>
+                <text id="Materialnr." font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="20" fill="#2D333D">
+                    <tspan x="0" y="145">Materialnr.</tspan>
+                </text>
+                <text id="Menge*" font-family="Roboto-Medium, Roboto" font-size="14" font-weight="400" line-spacing="20" fill="#2D333D">
+                    <tspan x="0" y="202">Menge*</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
