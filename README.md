@@ -1,8 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web Developer Project Test - Next.js Implementation
+
+## Project Overview
+
+This project aims to replicate the functionality and appearance of the [Ontego Mobile Devices page](https://ontego.de/sap_mobility/mobile-geraete.html) using Next.js and React.js. It includes replicating the appearance, animations, product details, filter functionality, and slide bar for price and weight.
+
+## Features
+- Appearance Duplication: The website replicates the appearance of the Ontego Mobile Devices page, including layout, styling, and visual elements.
+- Animations: Animations are implemented to mimic those present on the original page, enhancing the user experience.
+- Product Details: Detailed information about each mobile device is provided, including specifications, images, and descriptions.
+- Filter Functionality:
+  - Filters for available and unavailable devices are implemented. Unavailable devices cannot be clicked.
+  - Active filters are visually represented, showing pictures of devices matching the filter criteria.
+- Price List and Weight Slide Bar:
+  - A price list and weight slide bar are provided, allowing users to filter devices based on price and weight criteria.
+  - The slide bar functions similarly to other filters, providing a seamless user experience.
+
+## Live Demo
+Explore the live demo of the Next.js Dashboard to experience its features firsthand:
+https://next-ontego.netlify.app/
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -16,25 +46,12 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Resources
+- [Next.js Documentation](https://nextjs.org/docs) - Learn more about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - Explore React for building user interfaces.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) - Comprehensive documentation for web technologies.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+- Original design and concept inspired by [Ontego](https://ontego.de/) and [Commsult](https://commsult.de/).
+- Animations sourced from [LottieFiles](https://lottiefiles.com/).
+- Product images and descriptions obtained from public domain sources.
